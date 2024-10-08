@@ -1,0 +1,23 @@
+stages:
+  - build
+  - test
+  - publish
+
+Build project:
+  stage: build
+  image: almalinux:9
+  script:
+    - echo "Build actions here"
+
+Test project:
+  stage: test
+  image: almalinux:9
+  script:
+    - echo "Testing done here"
+
+Publish artifacts:
+  stage: publish
+  image: almalinux:9
+  script:
+    - echo "Spread to the world!"
+
